@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="fav.png" type="favicon">
+    <!--google fonts link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Customer Survey Form</h1>
+    <div class="container">
+        
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="select">Select</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                    <option value="india">INDIA</option>
+                    <option value="japan">JAPAN</option>
+                    <option value="australia">AUSTRALIA</option>                    
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                Male <input type="checkbox" id="male" name="gender" value="male">
+                Female <input type="checkbox" id="female" name="gender" value="female">
+                Other <input type="checkbox" id="other" name="gender" value="other">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+            </div>
+
+            <div class="form-group">
+                <p>Profession:</p>
+                Teacher <input type="checkbox" id="teacher" name="profession" value="teacher">
+                Engineer <input type="checkbox" id="engineer" name="profession" value="engineer">
+                Doctor <input type="checkbox" id="doctor" name="profession" value="doctor">
+                Actor <input type="checkbox" id="actor" name="profession" value="actor">
+            </div>
+            
+            <div class="form-group">
+                <label for="feedback">Write something about you?</label>
+                <textarea id="feedback" name="feedback"></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <div class="copy-right">&copy;2023 Survey form designed by Nagaraju Dola</div>
+    </footer>
+</body>
+</html>
